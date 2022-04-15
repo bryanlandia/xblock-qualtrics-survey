@@ -14,7 +14,7 @@ class QualtricsSurveyAppConfig(AppConfig):
     """
 
     name = 'qualtricssurvey'
-    plugin_app = { }
+    plugin_app = {}
 
     def ready(self):
         """
