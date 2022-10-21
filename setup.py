@@ -24,13 +24,7 @@ setup(
         'qualtricssurvey',
     ],
     install_requires=[
-<<<<<<< HEAD
-        'Django',
-||||||| 42d1544
-        'Django<2.0.0',
-=======
         'Django>=2.2,<3.0',
->>>>>>> 7e3bfa9168c4bde9dc899f9c287629d0303bc98f
         'edx-opaque-keys',
         'mock',
         'six',
