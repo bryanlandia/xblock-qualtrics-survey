@@ -5,7 +5,7 @@ from os import path
 from setuptools import setup
 
 
-version = '1.0.0'
+version = '2.0.0'
 description = __doc__.strip().split('\n')[0]
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.rst')) as file_in:
@@ -24,7 +24,13 @@ setup(
         'qualtricssurvey',
     ],
     install_requires=[
+<<<<<<< HEAD
         'Django',
+||||||| 42d1544
+        'Django<2.0.0',
+=======
+        'Django>=2.2,<3.0',
+>>>>>>> 7e3bfa9168c4bde9dc899f9c287629d0303bc98f
         'edx-opaque-keys',
         'mock',
         'six',
@@ -32,6 +38,12 @@ setup(
         'xblock-utils',
     ],
     entry_points={
+        'cms.djangoapp': [
+            'qualtricssurvey = qualtricssurvey.apps:QualtricsSurveyAppConfig'
+        ],
+        'lms.djangoapp': [
+            'qualtricssurvey = qualtricssurvey.apps:QualtricsSurveyAppConfig'
+        ],
         'xblock.v1': [
             'qualtricssurvey = qualtricssurvey.xblocks:QualtricsSurvey',
         ],
