@@ -41,6 +41,7 @@ setup(
     },
     package_data={
         "qualtricssurvey": [
+            'mixins/*',
             'public/*',
             'scenarios/*.xml',
             'templates/*',
